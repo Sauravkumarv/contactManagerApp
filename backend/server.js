@@ -8,8 +8,13 @@ dotenv.config();
 const app=express();
 dbConnect();
 
+const allowedOrigins = [
+  "http://localhost:3000",          
+  "https://contactmanagerapp-e1eu.onrender.com/" 
+];
+
 app.use(cors({
-origin:"http://localhost:5173"
+origin: allowedOrigins,
 }))
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
