@@ -11,7 +11,7 @@ Database: MongoDB (Mongoose ODM)
 
 ⚙️ Setup Instructions
 1️⃣ Clone the Repository
-git clone https://github.com/yourusername/contact-manager.git
+git clone https://github.com/Sauravkumarv/contactManagerApp.git
 cd contact-manager
 
 2️⃣ Backend Setup
