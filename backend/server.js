@@ -10,7 +10,8 @@ dbConnect();
 
 const allowedOrigins = [
   "http://localhost:3000",          
-  "https://contact-manager-app-dusky.vercel.app" 
+  "https://contact-manager-app-dusky.vercel.app",
+  "https://contact-manager-ix9zicijq-sauravkumarvs-projects.vercel.app/"
 ];
 
 
