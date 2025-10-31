@@ -10,7 +10,7 @@ dbConnect();
 
 const allowedOrigins = [
   "http://localhost:3000",          
-  "https://contactmanagerapp-e1eu.onrender.com/" 
+  "https://contact-manager-app-dusky.vercel.app" 
 ];
 
 app.use(cors({
