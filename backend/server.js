@@ -13,6 +13,17 @@ const allowedOrigins = [
   "https://contact-manager-app-dusky.vercel.app" 
 ];
 
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("CORS not allowed for this origin: " + origin));
+    }
+  },
+}));
+
 app.use(cors({
 origin: allowedOrigins,
 }))
