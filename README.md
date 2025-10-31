@@ -23,30 +23,30 @@ Configure .env file
 Create a .env file in the server/ folder:
 
 PORT=5000
-MONGO_URI=mongodb://localhost:27017/contactDB
+MONGO_URI=your database url
 
 Start the backend server
 npm start
 
 
-Server will run at 👉 http://localhost:5000
+Server will run at 👉 http://localhost:5004
 
 3️⃣ Frontend Setup
-cd ../client
+cd ../client or frontend
 npm install
 
 Run the frontend
 npm start
 
 
-React app runs at 👉 http://localhost:3000
+React app runs at 👉 you frontend url
 
 4️⃣ CORS Setup (if needed)
 
 In your backend (server.js or index.js):
 
 import cors from "cors";
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(cors({ origin: "(http://localhost:5173)" }));
 
 🚀 How to Run the Application
 
@@ -56,11 +56,11 @@ Run the backend (Express server) → npm start inside /server folder.
 
 Run the frontend (React app) → npm start inside /client folder.
 
-Open your browser at 👉 http://localhost:3000
+Open your browser at 👉 http://localhost:5173
 
 🧾 API Endpoints Documentation
 Base URL
-http://localhost:5000/api/contacts
+http://localhost:5173/api/contacts
 
 1️⃣ POST /api/contacts
 
@@ -145,7 +145,6 @@ Response:
 ✅ Error & loading states
 ✅ Responsive design (TailwindCSS)
 
-📱 Screenshots (Optional)
 
 You can include screenshots like:
 
