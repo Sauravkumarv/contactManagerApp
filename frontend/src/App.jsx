@@ -18,7 +18,6 @@ function App() {
   const fetchContacts = async () => {
     try {
       setLoading(true);
-      // axios.get automatically parses JSON response
       const response = await axios.get(`${API_URL}/contacts`);
       setContacts(response.data);
       setError("");
@@ -29,7 +28,6 @@ function App() {
     }
   };
 
-  // Load contacts when the app starts
   useEffect(() => {
     fetchContacts();
   }, []);
@@ -41,7 +39,6 @@ function App() {
       // axios.post automatically sends JSON and sets headers
       await axios.post(`${API_URL}/contacts`, contact);
       
-      // Refresh the contact list
       fetchContacts();
     } catch (err) {
       setError("Error adding contact");
@@ -57,12 +54,10 @@ function App() {
     
     try {
       setLoading(true);
-      // Send delete request with id as parameter
       await axios.delete(`${API_URL}/contacts/${id}`, {
         params: { id }
       });
       
-      // Refresh the contact list
       fetchContacts();
     } catch (err) {
       setError("Error deleting contact");
