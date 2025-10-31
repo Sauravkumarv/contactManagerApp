@@ -70,7 +70,7 @@ npm start
 
 React app runs at 👉 **your frontend url**
 
-### 4️⃣ CORS Setup (if needed)
+### 4️⃣ CORS Setup 
 
 In your backend (`server.js` or `index.js`):
 
