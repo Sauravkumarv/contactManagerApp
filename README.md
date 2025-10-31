@@ -155,15 +155,3 @@ Add Contact Form
 
 Delete Confirmation
 
-📚 Folder Structure
-contact-manager/
-├── server/              # Backend (Express + MongoDB)
-│   ├── models/
-│   ├── controllers/
-│   ├── routes/
-│   └── server.js
-└── client/              # Frontend (React + Tailwind)
-    ├── src/
-    │   ├── components/
-    │   ├── App.jsx
-    │   └── index.js
